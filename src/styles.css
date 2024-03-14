@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+}
+
+:root {
+    --primary-color: #EB9A50;
+    --secondary-color: #E57C2A;
+    --strong-color: #8E3D1E;
+}
+

@@ -1,0 +1,81 @@
+<div class="house-container">
+    <div class="house-container-info">
+        <h1>{{housingLocation?.name}}</h1>
+        <h2>{{housingLocation?.city}}, {{housingLocation?.state}}</h2>
+
+        <div class="house-container-properties">
+            <div class="properties">
+                <div>
+                    <h4>Units Available</h4>
+                    <h3>{{housingLocation?.availableUnits}}</h3>
+                </div>
+
+                <div>
+                    <h4>Wifi</h4>
+                    <h3>{{ housingLocation?.wifi ? 'Yes' : 'No' }}</h3>
+                </div>
+
+                <div>
+                    <h4>Laundry</h4>
+                    <h3>{{ housingLocation?.laundry ? 'Yes' : 'No' }}</h3>
+                </div>
+            </div>
+
+            <div class="house-apply-form">
+                <h1>Apply Now!</h1>
+
+                <form [formGroup]="applyForm" (submit)="submitApplication()">
+                    <label for="first-name">First Name</label>
+                    <input id="first-name" type="text" formControlName="firstName">
+
+                    <label for="last-name">Last Name</label>
+                    <input id="last-name" type="text" formControlName="lastName">
+
+                    <label for="email">Email</label>
+                    <input id="email" type="email" formControlName="email">
+                    
+                    <button type="submit" class="primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="house-container-image">
+        <img [src]="housingLocation?.photo">
+    </div>
+</div>
+<!-- <div>
+    <img class="house-photo" [src]="housingLocation?.photo">
+    <section class="house-description">
+        <h2 class="house-heading">
+            {{housingLocation?.name}}
+        </h2>
+        <p class="house-location">
+            {{housingLocation?.city}}, {{housingLocation?.state}}
+        </p>
+    </section>
+</article>
+
+<section class="listing-features">
+    <h2 class="section-heading">About this housing location</h2>
+    <ul>
+        <li>Units available: {{housingLocation?.availableUnits}}</li>
+        <li>Does this location have wifi: {{housingLocation?.wifi}}</li>
+        <li>Does this location have laundry: {{housingLocation?.laundry}}</li>
+    </ul>
+</section>
+
+<section class="form-apply">
+    <h2 class="form-heading">Apply now to live here</h2>
+    <form [formGroup]="applyForm" (submit)="submitApplication()">
+        <label for="first-name">First Name</label>
+        <input id="first-name" type="text" formControlName="firstName">
+
+        <label for="last-name">Last Name</label>
+        <input id="last-name" type="text" formControlName="lastName">
+
+        <label for="email">Email</label>
+        <input id="email" type="email" formControlName="email">
+        <button type="submit" class="primary">Apply now</button>
+    </form>
+</section> -->

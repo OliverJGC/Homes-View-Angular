@@ -1,0 +1,127 @@
+.house-container {
+    display: flex;
+    justify-content: center;
+}
+
+/* Image */
+.house-container-image {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.house-container-image img {
+    width: 70%;
+    border-radius: 20px;
+}
+
+
+/* Info */
+.house-container-info {
+    width: 60%;
+}
+
+.house-container-info h1{
+    color: #181818;
+    font-size: 60px;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.house-container-info h2{
+    color: #181818;
+    font-size: 40px;
+    margin-top: 10px;
+    margin-left: 40px;
+    font-weight: 600;
+}
+
+
+/* Properties */
+.house-container-properties {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.properties {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.properties div {
+    margin: 20px;
+    padding: 10px;
+    width: 70%;
+    border-radius: 13px;
+    background-color: var(--primary-color);
+}
+
+.properties div h4{
+    color: var(--strong-color);
+    text-align: center;
+    font-size: 35px;
+}
+
+.properties div h3{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
+
+.house-apply-form {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    flex-direction: column;
+}
+
+.house-apply-form h1{
+    color: var(--strong-color);
+    text-align: center;
+    font-size: 50px;
+}
+
+.house-apply-form form {
+    margin-top: 20px;
+    width: 80%;
+}
+
+.house-apply-form form label {
+    color: white;
+    text-transform: uppercase;
+    color: white;
+    font-size: 25px;
+}
+
+.house-apply-form form input {
+    display: block;
+    font-size: 16pt;
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+}
+
+.house-apply-form form button {
+    background-color: var(--strong-color);
+    color: white;
+    font-family: 'Rubik';
+    font-size: 25px;
+    border: none;
+    text-transform: uppercase;
+    padding: 15px;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
